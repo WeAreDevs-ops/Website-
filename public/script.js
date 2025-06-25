@@ -1,4 +1,3 @@
-
 async function fetchLimitedItem() {
   const assetId = document.getElementById("assetIdInput").value;
   if (!assetId) return alert("Please enter an Asset ID");
@@ -7,10 +6,10 @@ async function fetchLimitedItem() {
   resultDiv.innerHTML = "Fetching...";
 
   try {
-    const detailsRes = await fetch(`https://economy.roblox.com/v2/assets/${assetId}/details`);
+    const detailsRes = await fetch(`https://economy.roproxy.com/v2/assets/${assetId}/details`);
     const details = await detailsRes.json();
 
-    const thumbRes = await fetch(`https://thumbnails.roblox.com/v1/assets?assetIds=${assetId}&size=420x420&format=Png`);
+    const thumbRes = await fetch(`https://thumbnails.roproxy.com/v1/assets?assetIds=${assetId}&size=420x420&format=Png`);
     const thumbData = await thumbRes.json();
     const thumbnail = thumbData.data[0]?.imageUrl || "";
 
