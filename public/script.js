@@ -41,7 +41,7 @@ async function fetchLimitedItem() {
       <img src="${thumbnail}" alt="Item Thumbnail" />
       <p><strong>Creator:</strong> ${details.Creator?.Name || "N/A"}</p>
       <p><strong>Lowest Resale Price:</strong> ${formattedResale}</p>
-      <p><strong>B-Market Rate 150PHP/1K-RBX:</strong> ${resaleInPHP}</p>
+      <p><strong>BlackMarket 150₱/1000RBX:</strong> ${resaleInPHP}</p>
       <p><strong>Type:</strong> ${getAssetTypeName(details.AssetTypeId)}</p>
       <p><strong>Is Limited:</strong> ${details.IsLimited ? "✅ True" : "❌ False"}</p>
       <p><strong>Is Limited Unique:</strong> ${details.IsLimitedUnique ? "✅ True" : "❌ False"}</p>
